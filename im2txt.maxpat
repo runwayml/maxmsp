@@ -38,12 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 822.75, 338.0, 29.5, 23.0 ],
+					"style" : "",
+					"text" : "$2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 635.0, 439.0, 168.0, 20.0 ],
-					"presentation_rect" : [ 635.0, 440.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "set value on patcher load"
 				}
@@ -56,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 863.0, 489.0, 93.0, 20.0 ],
-					"presentation_rect" : [ 866.0, 486.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "display the text"
 				}
@@ -69,9 +82,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 863.0, 339.0, 364.0, 20.0 ],
-					"presentation_rect" : [ 865.0, 342.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "drop the first argument, just get text",
+					"text" : "skip the first argument, just get the text",
 					"textjustification" : 2
 				}
 
@@ -83,7 +95,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 949.0, 292.0, 278.0, 20.0 ],
-					"presentation_rect" : [ 949.0, 293.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "print the caption to console",
 					"textjustification" : 2
@@ -97,7 +108,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 876.0, 240.0, 351.0, 20.0 ],
-					"presentation_rect" : [ 876.0, 237.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "double-click this to see the raw data",
 					"textjustification" : 2
@@ -111,7 +121,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 986.0, 181.0, 241.0, 20.0 ],
-					"presentation_rect" : [ 986.0, 178.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "get the caption of the first result",
 					"textjustification" : 2
@@ -125,7 +134,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 929.0, 110.0, 298.0, 20.0 ],
-					"presentation_rect" : [ 632.0, 238.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "deserialize the string to a JSON object (Max dict)",
 					"textjustification" : 2
@@ -139,7 +147,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 929.0, 55.0, 298.0, 20.0 ],
-					"presentation_rect" : [ 632.0, 184.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "get the /data message",
 					"textjustification" : 2
@@ -193,22 +200,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.75, 490.0, 300.0, 22.0 ],
-					"style" : "",
-					"text" : "\"a man in a black shirt and a black tie\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 822.75, 338.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "$2"
+					"style" : ""
 				}
 
 			}
@@ -308,15 +300,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -371,7 +354,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-41", 1 ]
@@ -380,10 +363,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-41", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
