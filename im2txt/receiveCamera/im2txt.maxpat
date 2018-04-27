@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 4,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 1314.0, 881.0 ],
+		"rect" : [ 283.0, 90.0, 855.0, 509.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,144 +38,232 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 822.75, 338.0, 29.5, 23.0 ],
+					"id" : "obj-52",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 733.0, 138.0, 92.0, 20.0 ],
 					"style" : "",
-					"text" : "$2"
+					"text" : "dict.view object"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
+					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 635.0, 439.0, 168.0, 20.0 ],
+					"patching_rect" : [ 410.0, 138.0, 137.0, 20.0 ],
 					"style" : "",
-					"text" : "set value on patcher load"
+					"text" : "Max dictionary contents"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
+					"id" : "obj-48",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 863.0, 489.0, 93.0, 20.0 ],
+					"patching_rect" : [ 47.25, 368.0, 185.0, 20.0 ],
 					"style" : "",
-					"text" : "display the text"
+					"text" : "clear message when patch loads"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
+					"id" : "obj-44",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 863.0, 339.0, 364.0, 20.0 ],
+					"patching_rect" : [ 333.5, 391.0, 69.0, 20.0 ],
 					"style" : "",
-					"text" : "skip the first argument, just get the text",
-					"textjustification" : 2
+					"text" : "0th caption"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-35",
+					"id" : "obj-39",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 949.0, 292.0, 278.0, 20.0 ],
+					"patching_rect" : [ 99.25, 304.0, 87.0, 20.0 ],
 					"style" : "",
-					"text" : "print the caption to console",
-					"textjustification" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 876.0, 240.0, 351.0, 20.0 ],
-					"style" : "",
-					"text" : "double-click this to see the raw data",
-					"textjustification" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 986.0, 181.0, 241.0, 20.0 ],
-					"style" : "",
-					"text" : "get the caption of the first result",
-					"textjustification" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 929.0, 110.0, 298.0, 20.0 ],
-					"style" : "",
-					"text" : "deserialize the string to a JSON object (Max dict)",
-					"textjustification" : 2
+					"text" : "unpack the list"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"maxclass" : "comment",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 929.0, 55.0, 298.0, 20.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 22.0, 300.0, 68.0, 22.0 ],
 					"style" : "",
-					"text" : "get the /data message",
-					"textjustification" : 2
+					"text" : "unpack s s"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-30",
+					"id" : "obj-24",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 929.0, 12.0, 298.0, 20.0 ],
+					"patching_rect" : [ 198.0, 271.0, 138.0, 20.0 ],
 					"style" : "",
-					"text" : "listen for Runway OSC messages on port 57200",
-					"textjustification" : 2
+					"text" : "print to the Max console"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"linecount" : 37,
+					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.5, 9.0, 351.0, 503.0 ],
+					"patching_rect" : [ 67.0, 226.0, 184.0, 20.0 ],
 					"style" : "",
-					"text" : "<!--\n Copyright (C) 2018 Cristobal Valenzuela\n \n This file is part of RunwayML.\n \n RunwayML is free software: you can redistribute it and/or modify\n it under the terms of the GNU General Public License as published by\n the Free Software Foundation, either version 3 of the License, or\n (at your option) any later version.\n \n RunwayML is distributed in the hope that it will be useful,\n but WITHOUT ANY WARRANTY; without even the implied warranty of\n MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n GNU General Public License for more details.\n \n You should have received a copy of the GNU General Public License\n along with RunwayML.  If not, see <http://www.gnu.org/licenses/>.\n \n-->\n\n<!-- \n\n  im2Txt Example: This examples has the bare minimum to establish\n  a socket connection with Runway and the im2txt model\n\n  Cristóbal Valenzuela, George Profenza (porting Max example)\n  cris@runwayml.com\n\n-->"
+					"text" : "double-click to see the JSON file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 175.0, 193.0, 212.0, 20.0 ],
+					"style" : "",
+					"text" : "retrieve the caption of the 0th element"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 46.25, 160.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 116.25, 119.0, 236.0, 20.0 ],
+					"style" : "",
+					"text" : "create a Max dictionary from the JSON file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 83.25, 80.0, 111.0, 20.0 ],
+					"style" : "",
+					"text" : "parse the tag /data"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 124.25, 46.0, 319.0, 20.0 ],
+					"style" : "",
+					"text" : "listen to OSC messages from Runway, default port: 57200"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 4,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 208.0, 79.0, 665.0, 319.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"linecount" : 20,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.5, 9.0, 629.0, 275.0 ],
+									"style" : "",
+									"text" : "Copyright (C) 2018 Cristobal Valenzuela\n \nThis file is part of RunwayML.\n \nRunwayML is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nRunwayML is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n \nYou should have received a copy of the GNU General Public License along with RunwayML.  If not, see <http://www.gnu.org/licenses/>.\n\nim2Txt Example: This examples has the bare minimum to establish a socket connection with Runway and the im2txt model\n\nCristóbal Valenzuela, George Profenza (porting Max example)\ncris@runwayml.com"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 13.25, 14.0, 93.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p copyright-info"
 				}
 
 			}
@@ -186,7 +274,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.75, 439.0, 81.0, 22.0 ],
+					"patching_rect" : [ 22.0, 344.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess set"
 				}
@@ -199,8 +287,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.75, 490.0, 300.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 22.0, 391.0, 300.0, 22.0 ],
+					"style" : "",
+					"text" : "\"a man wearing a tie and a hat .\""
 				}
 
 			}
@@ -210,7 +299,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 863.0, 292.0, 76.0, 22.0 ],
+					"patching_rect" : [ 116.25, 271.0, 76.0, 22.0 ],
 					"style" : "",
 					"text" : "print caption"
 				}
@@ -223,7 +312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 852.0, 181.0, 125.0, 22.0 ],
+					"patching_rect" : [ 46.25, 193.0, 125.0, 22.0 ],
 					"style" : "",
 					"text" : "get results[0]::caption"
 				}
@@ -236,7 +325,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 812.25, 240.0, 50.5, 22.0 ],
+					"patching_rect" : [ 11.5, 226.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -253,7 +342,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.0, 187.5, 426.0, 210.0 ],
+					"patching_rect" : [ 399.0, 160.0, 426.0, 210.0 ],
 					"style" : ""
 				}
 
@@ -265,7 +354,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 814.0, 55.0, 68.0, 22.0 ],
+					"patching_rect" : [ 13.25, 80.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "route /data"
 				}
@@ -278,7 +367,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 814.0, 110.0, 90.0, 22.0 ],
+					"patching_rect" : [ 13.25, 112.0, 90.0, 22.0 ],
 					"style" : "",
 					"text" : "dict.deserialize"
 				}
@@ -291,7 +380,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 9.0, 106.0, 22.0 ],
+					"patching_rect" : [ 13.25, 46.0, 106.0, 22.0 ],
 					"style" : "",
 					"text" : "udpreceive 57200"
 				}
@@ -300,9 +389,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -310,8 +404,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -319,26 +411,29 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"destination" : [ "obj-26", 1 ],
+					"source" : [ "obj-31", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"destination" : [ "obj-19", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -346,8 +441,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -355,35 +449,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-41", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
 					"source" : [ "obj-41", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
