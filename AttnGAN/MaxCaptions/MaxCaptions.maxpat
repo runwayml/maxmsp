@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 115.0, 117.0, 773.0, 665.0 ],
+		"rect" : [ 202.0, 112.0, 773.0, 665.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,78 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 1,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 699.0, 289.0, 665.0, 319.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"linecount" : 23,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.5, 9.0, 629.0, 315.0 ],
+									"text" : "Copyright (C) 2019 RunwayML Examples\n \nThis file is part of RunwayML Examples.\n \nRunway-Examples is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nRunway-Examples is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n \nYou should have received a copy of the GNU General Public License along with RunwayML.  If not, see <http://www.gnu.org/licenses/>.\n\n================================================================================\n\nRunwayML\nhttps://runwayml.com/\n\nAttnGAN MaxCaptions Example:\nType captions in the text box and send them to RunwayML to generate images.\nMade by jpyepez"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 656.25, 30.0, 93.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p copyright-info"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 14.0,
@@ -454,12 +526,12 @@
 					"presentation_rect" : [ 317.0, 310.5, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "number",
+							"parameter_type" : 3,
 							"parameter_longname" : "number",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_initial" : [ 3000 ],
-							"parameter_shortname" : "number",
-							"parameter_type" : 3
+							"parameter_initial" : [ 3000 ]
 						}
 
 					}
@@ -501,12 +573,12 @@
 					"presentation_rect" : [ 396.0, 260.5, 189.0, 85.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "textedit",
+							"parameter_type" : 3,
 							"parameter_longname" : "textedit",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_initial" : [ "Type", "caption", "here..." ],
-							"parameter_shortname" : "textedit",
-							"parameter_type" : 3
+							"parameter_initial" : [ "Type", "caption", "here..." ]
 						}
 
 					}
@@ -571,8 +643,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -726,7 +796,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "attngan.js",
-				"bootpath" : "~/Projects/RunwayML/Examples/CaptionMax",
+				"bootpath" : "~/Git/RunwayMax/AttnGAN/MaxCaptions",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
