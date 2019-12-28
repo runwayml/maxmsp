@@ -15,6 +15,9 @@ More RunwayML networking examples [here](https://learn.runwayml.com/#/networking
 ### OSC
 * [Receive Text from im2txt](im2txt/receiveCamera) by [Aarón Montoya-Moraga](montoyamoraga.io) 🎉
 
+### Socket.io
+* [Text to Image Generation with AttnGAN](AttnGAN/MaxCaptions) by [JP Yepez](https://www.jpyepez.com/) 🎉
+
 
 ## Contributing
 
