@@ -9,7 +9,7 @@ This example uses the Node for Max API and the Socket.io library to enable real-
 * Node.js
 * NPM
 
-Node.js and NPM are used extensively for Javascript applications, therefore, there are plenty of installation guides available online. For example: [Get NPM](www.npmjs.com/get-npm)".
+Node.js and NPM are used extensively for Javascript applications, therefore, there are plenty of installation guides available online. For example: [Get NPM](www.npmjs.com/get-npm).
 
 ## Running the Example
 
@@ -28,8 +28,8 @@ $ npm install
 
 * Open the `MaxCaptions.maxpat` file.
 * Click on the `Start` button to initialize the script.
-* Make sure the `Port` number box matches the RunwayML Socket.io port. Click on `Connect to Port`.
-* Type a caption in the text box and click on `Send`.
+* Make sure the `Port` number box matches the RunwayML Socket.io port. Click on the `Connect to Port` button.
+* Type a caption in the text box and click on the `Send` button.
  
 ![MaxCaptions Preview](images/maxcaptions_preview.jpg)
 
